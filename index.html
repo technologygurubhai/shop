@@ -1,0 +1,18 @@
+<script>
+  // Replace "destination_page_url" with the URL you want to forward to
+const destinationUrl = "destination_page_url";
+
+// Specify the delay time in milliseconds before forwarding
+const delayInMilliseconds = 5000; // 5000 milliseconds = 5 seconds
+
+// Function to forward the user to the destination page
+function redirectToDestination() {
+    window.location.href = destinationUrl;
+}
+
+// Execute the redirection function when the window loads
+window.onload = function() {
+    setTimeout(redirectToDestination, delayInMilliseconds);
+};
+
+</script>
